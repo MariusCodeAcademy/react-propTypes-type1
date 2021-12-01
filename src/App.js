@@ -5,7 +5,14 @@ function App() {
   return (
     <div className='App'>
       <h2>App</h2>
-      <CounterProp name='London' initVal='3' />
+      <CounterProp
+        name='London'
+        initVal={3}
+        specialVal={'special'}
+        selectVal='orange'
+        favNumbers={[7, 12, 75]}
+        arrayOfNumbersOrStrings={[7, 12, 75, '1']}
+      />
     </div>
   );
 }
