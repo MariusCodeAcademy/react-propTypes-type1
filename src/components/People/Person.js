@@ -3,10 +3,6 @@ import { useState, useEffect } from 'react';
 export default function Person(props) {
   const [clickNr, setClicksNr] = useState(1);
 
-  // this render every time compoement changes
-  document.title = 'Person stuff';
-  console.log('title changed');
-
   // on component mount change document title to 'Person stuff'
   useEffect(() => {
     document.title = 'Person stuff';
