@@ -19,9 +19,14 @@ function CounterProp(props) {
   );
 }
 
+// default props
+CounterProp.defaultProps = {
+  name: 'Usual',
+};
+
 // check props
 CounterProp.propTypes = {
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   initVal: PropTypes.number.isRequired,
   specialVal: PropTypes.node.isRequired,
   selectVal: PropTypes.oneOf(['red', 'green', 'blue', 'orange']),
